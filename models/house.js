@@ -18,7 +18,11 @@ module.exports = sequelize.define('house',{
             },
             isAlpha: {
                 args: true,
-                msg: 'Name must contain letters'
+                msg: 'Name must only contain letters'
+            },
+            len: {
+                args: [3,15],
+                msg: 'Name must be between 3 and 15 characters'
             }
         }
     },
