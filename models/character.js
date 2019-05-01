@@ -21,5 +21,5 @@ module.exports = sequelize.define('character',{
         type: Sequelize.INTEGER
     }
 }, {
-    timestamps:false
+     timestamps:false
 });
