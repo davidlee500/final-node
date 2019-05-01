@@ -33,6 +33,6 @@ it('should return a 404 when deleting character that doesnt exist', () => {
 // TESTING DELETE HAPPY
 it('should return a 204 when deleting character that exists', () => {
     return frisby
-        .del('http://localhost:8000/api/characters/7')
+        .del('http://localhost:8000/api/characters/8')
         .expect('status',204);
 })

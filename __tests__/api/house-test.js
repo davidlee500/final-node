@@ -5,10 +5,10 @@ const Joi = frisby.Joi;
 it('should create a house', () => {
     return frisby
         .post('http://localhost:8000/api/houses', {
-            name: 'TangClan'
+            name: 'Testing'
         })
         .expect('status',200)
-        .expect('json','name','TangClan')
+        .expect('json','name','Testing')
         .expect('jsonTypes','id',Joi.number().required())
 })
 
