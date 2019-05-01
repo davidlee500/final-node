@@ -8,7 +8,7 @@ it('should create a house', () => {
             name: 'Testing'
         })
         .expect('status',200)
-        .expect('json','name','Testing')
+        .expect('json','name','Testingg')
         .expect('jsonTypes','id',Joi.number().required())
 })
 
