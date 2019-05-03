@@ -120,4 +120,4 @@ app.get('/api/characters/:id',function(request, response){
 });
 
 // Server setup
-app.listen(process.env.port||8000);
+app.listen(process.env.PORT||8000);
